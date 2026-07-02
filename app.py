@@ -201,9 +201,9 @@ def set_dummy(df, prefix, value, baseline):
 
 @st.cache_resource
 def load_artifacts():
-    model = joblib.load("logistic_regression_model.pkl")
-    scaler = joblib.load("scaler.pkl")
-    feature_names = joblib.load("feature_names.pkl")
+    model = joblib.load("models/logistic_regression_model.pkl")
+    scaler = joblib.load("models/scaler.pkl")
+    feature_names = joblib.load("models/feature_names.pkl")
     return model, scaler, feature_names
 
 

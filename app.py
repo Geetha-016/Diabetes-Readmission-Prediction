@@ -423,10 +423,13 @@ if predict_clicked:
     res_col1, res_col2 = st.columns([1, 1.4])
 
     with res_col1:
-        if prediction == 1:
-            st.error("🔴 **High Risk** of 30-day readmission")
-        else:
+        risk = probability * 100
+        if risk < 30:
             st.success("🟢 **Low Risk** of 30-day readmission")
+        elif risk <= 60:
+            st.warning("🟡 **Medium Risk** of 30-day readmission")
+        else:
+            st.error("🔴 **High Risk** of 30-day readmission")
 
         st.metric("Readmission Probability", f"{probability * 100:.1f}%")
         st.markdown(

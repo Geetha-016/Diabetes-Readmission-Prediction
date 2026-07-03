@@ -111,7 +111,7 @@ An interactive dashboard was created to visualize:
 
 ---
 
-## 💻 Streamlit Application
+## Streamlit Application
 
 The deployed Streamlit application enables users to enter patient information and predict the probability of 30-day hospital readmission using the trained Logistic Regression model.
 
@@ -120,6 +120,6 @@ The deployed Streamlit application enables users to enter patient information an
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Geetha R. Iyer**
